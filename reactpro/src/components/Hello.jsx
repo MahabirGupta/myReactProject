@@ -20,12 +20,30 @@
 //   );
 // }
 
-function Hello(props) {
-  console.log(props);
+// function Hello(props) {
+//   console.log(props);
+//   // props destructuring
+//   const { name, message } = props;
+//   return (
+//     <div>
+//       <h1>
+//         {/* {props.message} {props.name}! */}
+//         {message} {name}!
+//       </h1>
+//       ;
+//     </div>
+//   );
+// }
+
+function Hello({ name, message, emoji }) {
+  // console.log(props);
+  // props destructuring
+  // const { name, message } = props;
   return (
     <div>
       <h1>
-        {props.message} {props.name}!
+        {/* {props.message} {props.name}! */}
+        {message} {name} {emoji}!
       </h1>
       ;
     </div>
