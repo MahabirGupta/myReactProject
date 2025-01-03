@@ -20,8 +20,26 @@
 //   );
 // }
 
-function Hello(props) {
-  console.log(props);
+// function Hello(props) {
+//   console.log(props);
+//   // props.name = "Tom";
+//   // props destructuring
+//   // const { name, message } = props;
+//   return (
+//     <div>
+//       <h1>
+//         {/* {props.message} {props.name}! */}
+//         {props.message} {props.name} {props.emoji} {props.seatNumbers} <br />
+//         {props.person.message} {props.person.name} {props.person.emoji} {""}
+//         {props.person.seatNumbers}
+//       </h1>
+//       ;
+//     </div>
+//   );
+// }
+
+function Hello(person) {
+  // console.log(props);
   // props.name = "Tom";
   // props destructuring
   // const { name, message } = props;
@@ -29,14 +47,14 @@ function Hello(props) {
     <div>
       <h1>
         {/* {props.message} {props.name}! */}
-        {props.message} {props.name} {props.emoji}!
+        {person.message} {person.name} {person.emoji} {""}
+        {person.seatNumbers}
       </h1>
       ;
     </div>
   );
 }
-
-// function Hello({ name, message, emoji }) {
+// function Hello({ name, message, emoji, seatNumbers, person }) {
 //   // console.log(props);
 //   // props destructuring
 //   // const { name, message } = props;
@@ -44,7 +62,7 @@ function Hello(props) {
 //     <div>
 //       <h1>
 //         {/* {props.message} {props.name}! */}
-//         {message} {name} {emoji}!
+//         {message} {name} {emoji} {seatNumbers} {person}!
 //       </h1>
 //       ;
 //     </div>
