@@ -1,4 +1,5 @@
 import Hello from "./components/Hello";
+import Fruits from "./components/Fruits";
 
 function App() {
   const seatNumbers = [1, 2, 3, 4];
@@ -19,6 +20,7 @@ function App() {
         person={person}
       />
       {/* <Hello name="Anish" message="Hello!" /> */}
+      <Fruits />
     </div>
   );
 }

@@ -50,7 +50,6 @@ function Hello(person) {
         {person.message} {person.name} {person.emoji} {""}
         {person.seatNumbers}
       </h1>
-      ;
     </div>
   );
 }
