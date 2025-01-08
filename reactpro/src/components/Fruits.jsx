@@ -5,11 +5,11 @@ export default function Fruits() {
 
   // create an object array
   const fruits = [
-    { name: "Apple", price: 2.6, emoji: "🍎" },
-    { name: "Pear", price: 3.65, emoji: "🍐" },
-    { name: "Oranges", price: 0.6, emoji: "🍊" },
-    { name: "Bananas", price: 3.3, emoji: "🍌" },
-    { name: "Water-melon", price: 4.2, emoji: "🍉" },
+    { name: "Apple", price: 2.6, emoji: "🍎", soldout: true },
+    { name: "Pear", price: 3.65, emoji: "🍐", soldout: true },
+    { name: "Oranges", price: 0.6, emoji: "🍊", soldout: false },
+    { name: "Bananas", price: 3.3, emoji: "🍌", soldout: true },
+    { name: "Water-melon", price: 4.2, emoji: "🍉", soldout: false },
   ];
   return (
     <div>
@@ -20,6 +20,7 @@ export default function Fruits() {
             name={fruit.name}
             price={fruit.price}
             emoji={fruit.emoji}
+            soldout={fruit.soldout}
           />
         ))}
       </ul>
