@@ -6,16 +6,20 @@ export default function ConditionalComponent() {
   let messageOne = <h1>This is message 1</h1>;
   let messageTwo = <h1>This is message 2</h1>;
 
-  let message;
-  const display = false;
-  if (display) {
-    message = <h1>This is message 1</h1>;
-    // return messageOne;
-  } else {
-    message = <h1>This is message 2</h1>;
-    // return messageTwo;
-  }
-  return message;
+  // let message;
+  const display = true;
+  // if (display) {
+  //   message = <h1>This is message 1</h1>;
+  //   // return messageOne;
+  // } else {
+  //   message = <h1>This is message 2</h1>;
+  //   // return messageTwo;
+  // }
+
+  // return display ? <h1>This is message 1</h1> : <h1>This is message 2</h1>;
+  return display ? <Welcome /> : <Code />;
+  // return message;
+
   // if (display) {
   //   return (
   //     <div>
