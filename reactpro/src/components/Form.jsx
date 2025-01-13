@@ -5,6 +5,12 @@ export default function Form() {
   // function handleChange(e) {
   //   setName(e.target.value);
   // }
+  function handleSubmit(e) {
+    // to prevent the page from refreshing when clicking the submit button
+    e.preventDefault();
+    // to check if the name has been saved
+    console.log(name);
+  }
   return (
     <div>
       {name.firstName} - {name.lastName}
@@ -26,6 +32,7 @@ export default function Form() {
           onChange={(e) => setName({ ...name, lastName: e.target.value })}
           value={name.lastName}
         />
+        <button onClick={(e) => handleSubmit(e)}>Submit</button>
       </form>
     </div>
   );
